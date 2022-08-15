@@ -7,10 +7,10 @@ import Image from "next/image";
 import Loading from "../components/Loading";
 
 const Jokes = () => {
-  const [jokes, setJoke] = useState("Click the button below..!");
+  const [jokes, setJoke] = useState("Making a jokes database, Stay tuned..!");
   const [firstname, setFirstName] = useState();
   const [lastname, setLastName] = useState();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   
   const fetchJoke = async () => {
@@ -69,14 +69,14 @@ const Jokes = () => {
           ) : (
             <div onClick={() => copyText(jokes.joke)} className="h-40">
               <h1 className="font-medium text-lg cursor-copy">
-                {jokes.joke ?? ""}
+                {jokes.joke ?? jokes}
               </h1>
             </div>
           )}
 
           {/* button to get random joke */}
           <button
-            onClick={fetchJoke}
+            
             className="bg-indigo-500 text-white font-semibold uppercase tracking-wide min-w-full md:min-w-fit p-2 md:px-40 m-5 rounded-lg shadow-md hover:bg-indigo-800"
           >
             {" "}

@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 
 const Word = () => {
   const [word, setJoke] = useState("Click the button below..!");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const fetchadvice = async () => {
     //fetch joke from api

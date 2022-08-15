@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 const Hero = () => {
   let things = [
-    { id: "1", name: "Jokes", link: "/Jokes" },
-    { id: "2", name: "Advice", link: "/Advice" },
-    { id: "3", name: "Facts", link: "/Uselessfacts" },
-    { id: "4", name: "Excuses", link: "/Excuses" },
-    { id: "5", name: "Word", link: "/Word" },
+      { id: "2", name: "Advice", link: "/Advice" },
+      { id: "3", name: "Facts", link: "/Uselessfacts" },
+      { id: "4", name: "Excuses", link: "/Excuses" },
+      { id: "5", name: "Word", link: "/Word" },
+      { id: "1", name: "Jokes", link: "/Jokes" },
   ];
   return (
     <div className="bg-gray-100 min-h-screen">

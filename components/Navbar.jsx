@@ -5,11 +5,11 @@ import Image from "next/image";
 const Navbar = () => {
   let links = [
     { id: "0", name: "Home", link: "/" },
-    { id: "1", name: "Jokes", link: "/Jokes" },
     { id: "2", name: "Advice", link: "/Advice" },
     { id: "3", name: "Facts", link: "/Uselessfacts" },
     { id: "4", name: "Excuses", link: "/Excuses" },
     { id: "5", name: "Word", link: "/Word" },
+    { id: "1", name: "Jokes", link: "/Jokes" },
   ];
   const [open, setOpen] = useState(false);
   return (
@@ -67,9 +67,9 @@ const Navbar = () => {
             )}
           </div>
           <ul
-            className={`md:flex bg-gray-100  md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${
+            className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${
               open
-                ? "top-16 opacity-100 shadow-lg"
+                ? "top-16 opacity-100 "
                 : "top-[-490px] opacity-0 md:opacity-100"
             }`}
           >
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Image
                   src={"/bmc-button.svg"}
                   width={130}
-                  height={80}
+                  height={50}
                   layout="intrinsic"
                   alt="buy me coffee page link of Mayuresh Shitole"
                 />

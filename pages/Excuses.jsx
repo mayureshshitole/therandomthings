@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 
 const Excuses = () => {
   const [excuses, setJoke] = useState("Click the button below..!");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const fetchexcuse = async () => {
     //fetch joke from api
